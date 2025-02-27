@@ -12,7 +12,7 @@
   --button-background-hover: #38B2AC;
   --secondary-color: #ffffff;
   --primary-color: black;
-  --card-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  --card-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
   --strong-color: #131212de;
   --a-color: #4f8cd1;
   --b-color: #131212e6;
@@ -22,8 +22,8 @@
 }
 
 .dark-mode {
-  --left-background: #1e1e1e;
-  --right-background: #2a2a2a;
+  --left-background: #131218;
+  --right-background: #ffffff08;
   --form-border: #444;
   --form-border-focus: #81e6d9;
   --delete-background: #e53e3e;
@@ -31,9 +31,9 @@
   --edit-background: #9b9e00;
   --button-background: #81e6d9;
   --button-background-hover: #4fd1c5;
-  --secondary-color: #1b1b1b;
+  --secondary-color: #191820;
   --primary-color: #ffffff;
-  --card-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.1);
+  --card-shadow: 0 0 10px 2px #ffffff1a;
   --strong-color: #f5f5f5;
   --a-color: #81aef1;
   --b-color: #e0e0e0;
