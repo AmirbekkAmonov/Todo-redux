@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --left-background: #ffffff;
+  --right-background: #eef2f6;
+  --form-border: #cfd0d2;
+  --form-border-focus: #4FD1C5;
+  --delete-background: #e53e3e;
+  --delete-background-hover: #c53030;
+  --edit-background: #d5d834;
+  --button-background: #4FD1C5;
+  --button-background-hover: #38B2AC;
+  --secondary-color: #ffffff;
+  --primary-color: black;
+  --card-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  --strong-color: #131212de;
+  --a-color: #4f8cd1;
+  --b-color: #131212e6;
+  --p-color: #131212c7;
+  --mod: #d8d8d8;
+  --menu-background: #ff8c00;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  ;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  max-height: 80px;
+}
+
+a {
+  text-decoration: none;
+}
