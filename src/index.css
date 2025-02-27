@@ -21,6 +21,26 @@
   --menu-background: #ff8c00;
 }
 
+.dark-mode {
+  --left-background: #1e1e1e;
+  --right-background: #2a2a2a;
+  --form-border: #444;
+  --form-border-focus: #81e6d9;
+  --delete-background: #e53e3e;
+  --delete-background-hover: #c53030;
+  --edit-background: #9b9e00;
+  --button-background: #81e6d9;
+  --button-background-hover: #4fd1c5;
+  --secondary-color: #1b1b1b;
+  --primary-color: #ffffff;
+  --card-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.1);
+  --strong-color: #f5f5f5;
+  --a-color: #81aef1;
+  --b-color: #e0e0e0;
+  --p-color: #d1d1d1;
+  --mod: #555;
+  --menu-background: #ff8c00;
+}
 
 
 * {
@@ -33,6 +53,9 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--left-background);
+  color: var(--primary-color);
+  transition: all 0.3s ease;
 }
 
 .container {

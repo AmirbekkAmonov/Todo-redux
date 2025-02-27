@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { searchInformation } from "../../redux/slices/searchSlice";
 import "./Header.scss";
@@ -13,6 +13,20 @@ function Header({ toggleMenu }) {
         dispatch(searchInformation(value));
     };
 
+    const [darkMode, setDarkMode] = useState(
+        localStorage.getItem("theme") === "dark"
+      );
+    
+      useEffect(() => {
+        if (darkMode) {
+          document.body.classList.add("dark-mode");
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.body.classList.remove("dark-mode");
+          localStorage.setItem("theme", "light");
+        }
+      }, [darkMode]);
+
     return (
         <header>
             <div className='menu' onClick={toggleMenu}>
@@ -26,8 +40,8 @@ function Header({ toggleMenu }) {
                 value={query}
                 onChange={handleSearch} 
             />
-            <div className='profile'>
-                <img src="night.png" alt="" />
+            <div className='profile'  onClick={() => setDarkMode(!darkMode)}>
+                <img src={darkMode ? "sun.png" : "night.png"} alt="" />
             </div>
         </header>
     );
